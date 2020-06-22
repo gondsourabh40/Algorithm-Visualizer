@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Algorithms Visualizer</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="js/library/p5.min.js"></script>
+<script src="js/library/p5.dom.min.js"></script>
+<script src="js/library/p5.sound.min.js"></script>
+
+<link href="css/style.css"   rel="stylesheet" type="text/css">
+
+
+</head>
+<body class='bgColor'>
+<div class="bs-example" >
+    <nav class="navbar navbar-expand-md navbar-dark HeaderColor fixed-top">
+        <a href="index.html" class="navbar-brand">Algorithms Visualizer</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+				<div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Machine Learning</a>
+                    <div class="dropdown-menu">
+                     <a href="KMeans.html" class="dropdown-item">KMeans</a>
+						 <a href="Knn.html"  class="dropdown-item">Knn</a>
+                        <a href="LinearRegression.html" class="dropdown-item">Linear Regression</a>
+					</div>
+                </div>
+				<div class="nav-item dropdown">
+                    <a href="Sorting.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Sorting</a>
+                    <div class="dropdown-menu">
+                        <a href="Sorting.html" onclick = "this.href='Sorting.html?algo=mergeSort'" class="dropdown-item">Merge Sort</a>
+                       <a  href="Sorting.html" onclick = "this.href='Sorting.html?algo=bubbleSort'" class="dropdown-item">Bubble Sort</a>
+                        <a href="Sorting.html" onclick = "this.href='Sorting.html?algo=insertionSort'" class="dropdown-item">Insertion Sort</a>
+                        <a href="Sorting.html" onclick = "this.href='Sorting.html?algo=selectionSort'" class="dropdown-item">Selection Sort</a>
+                    </div>
+                </div>
+
+				<div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Searching</a>
+                    <div class="dropdown-menu">
+                        <a href="Searching.html" onclick = "this.href='Searching.html?algo=linearSearch'" class="dropdown-item">Linear</a>
+						 <a href="Searching.html" onclick = "this.href='Searching.html?algo=binarySearch'" class="dropdown-item">Binary</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Path Finding</a>
+                    <div class="dropdown-menu">
+                        <a href="PathFinding.html" class="dropdown-item">BFS</a>
+                    </div>
+                </div>
+				
+				 
+            </div>
+			
+            
+        </div>
+    </nav>
+</div>
+<!--
+<div class="container">
+                    <form class="form-inline ml-auto">
+                <input type="text" id="myArray" class="form-control mr-sm-2" placeholder="Input Array">
+                <button type='button' onclick="myFunction(document.getElementById('myArray').value,getUrlVars()['algo'])">Sort</button>
+            </form>
+-->
+<script src="js/sketch.js"></script>
+</div>
+</body>
+</html>                              
